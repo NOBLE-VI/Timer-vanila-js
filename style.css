@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 80px;
+    margin-top: 30px;
+    border-bottom: 2px solid grey;
+    padding: 0px 100px;
+}
+
+#title::first-letter {
+
+    color: steelblue;
+}
+
+
+.main-container {
+    width: 550px;
+    height: 250px;
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 5%;
+    background-color: steelblue;
+
+
+}
+
+
+.display-container {
+
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: white;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 60px;
+    margin-top: 5%;
+
+}
+
+
+.buttons-container {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    /* background: grey; */
+    margin-top: 8%;
+    font-weight: 400;
+}
+
+.btn {
+
+    display: flex;
+    width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: lightslategray;
+
+}
+
+#btn-reset:hover {
+    transition: 0.2s ease-in;
+    background-color: rgba(255, 113, 113, 0.918);
+    cursor: pointer;
+    border: 2px solid azure;
+}
+
+#btn-start:hover {
+    transition: 0.2s ease-in;
+    background-color: rgba(125, 209, 92, 0.918);
+    cursor: pointer;
+    border: 2px solid azure;
+}
+
+
+#btn-stop:hover {
+    transition: 0.2s ease-in;
+    background-color: rgba(156, 113, 255, 0.918);
+    cursor: pointer;
+    border: 2px solid azure;
+}
+
+
+
+@media screen and (max-width: 650px) {
+
+    #title {
+        font-size: 30px;
+        padding: 0px 0px;
+    }
+
+    .main-container {
+        width: auto;
+        height: auto;
+    }
+
+    .buttons-container {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        align-items: center;
+
+    }
+
+    .btn {
+
+        display: flex;
+        width: 80%;
+        height: 50px;
+        margin-bottom: 5px;
+        border: 1px solid black;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+
+    }
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./stopwatch.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+
+    <header>
+
+        <h1 id="title">STOPWATCH</h1>   <!-- Heading/title -->
+
+    </header>
+
+
+    <main>
+        <div class="main-container">    <!-- top most div of main -->
+
+            <div class="display-container" id="d-container">        <!-- Display timer-->
+                <span id="m-time">00</span> <span>:</span> <span id="s-time">00</span>
+            </div>
+
+            <div class="buttons-container">
+                
+                <button id="btn-start" class="btn" >     <!-- Start button -->
+                    <p>Start</p>
+                </button>
+
+                <button id="btn-stop" class="btn" >      <!-- Stop button -->
+                    <p>Stop</p>
+                </button>
+
+                <button id="btn-reset" class="btn" >     <!-- Reset button -->
+                    <p>Reset</p>
+                </button>
+
+            </div>
+
+        </div>
+    </main>
+
+    <script src="timer.js"></script>
+
+</body>
+</html>
